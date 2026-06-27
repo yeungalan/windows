@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-: "${APP:="Windows"}"
+: "${APP:="ChromeOS Flex"}"
 : "${PLATFORM:="x64"}"
-: "${BOOT_MODE:="windows"}"
-: "${SUPPORT:="https://github.com/dockur/windows"}"
+: "${BOOT_MODE:="uefi"}"
+: "${SUPPORT:="https://github.com/yeungalan/windows"}"
 
 cd /run
 
