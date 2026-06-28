@@ -64,7 +64,6 @@ downloadFlex() {
 
 # Force raw format so the base image's disk.sh treats our file as-is
 DISK_FMT="raw"
-BOOT_MODE="uefi"
 
 if [ -f "$FLEX_BIN" ] && [ -s "$FLEX_BIN" ]; then
   info "ChromeOS Flex disk image already present, skipping download."
