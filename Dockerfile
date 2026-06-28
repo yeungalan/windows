@@ -21,6 +21,7 @@ RUN set -eu && \
         curl \
         unzip \
         samba \
+        dos2unix \
         libarchive-tools && \
     wget "https://github.com/gershnik/wsdd-native/releases/download/v${VERSION_WSDD}/wsddn_${VERSION_WSDD}_${TARGETARCH}.deb" -O /tmp/wsddn.deb -q --timeout=10 && \
     dpkg -i /tmp/wsddn.deb && \

@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 : "${APP:="ChromeOS-Flex"}"
 : "${PLATFORM:="x64"}"
-: "${BOOT_MODE:="uefi"}"
+: "${BOOT_MODE:="legacy"}"
 : "${SUPPORT:="https://github.com/yeungalan/windows"}"
 
 cd /run
