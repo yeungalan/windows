@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-: "${APP:="ChromeOS Flex"}"
+: "${APP:="ChromeOS-Flex"}"
 : "${PLATFORM:="x64"}"
 : "${BOOT_MODE:="uefi"}"
 : "${SUPPORT:="https://github.com/yeungalan/windows"}"

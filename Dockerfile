@@ -1,14 +1,13 @@
 # syntax=docker/dockerfile:1
+# ChromeOS Flex is x86_64-only; always use the amd64 QEMU base.
+# On Apple Silicon, run with: docker run --platform linux/amd64 ...
 
 ARG VERSION_ARG="latest"
-FROM scratch AS build-amd64
+FROM scratch
 
 COPY --from=qemux/qemu:7.32 / /
 
-FROM dockurr/windows-arm:${VERSION_ARG} AS build-arm64
-FROM build-${TARGETARCH}
-
-ARG TARGETARCH
+ARG TARGETARCH="amd64"
 ARG VERSION_WSDD="1.24"
 
 ARG DEBCONF_NOWARNINGS="yes"
